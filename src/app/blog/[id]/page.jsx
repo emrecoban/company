@@ -3,7 +3,7 @@ import styles from './post.module.css'
 import Image from 'next/image'
 
 async function getData(id) {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts/' + id);
+    const res = await fetch('http://localhost:3000/api/posts/' + id, { cache: "no-store" });
 
     if (!res.ok) {
         throw new Error('Failed to fetch data');
@@ -44,7 +44,7 @@ const Post = async ({ params }) => {
             </div>
             <div className={styles.content}>
                 <p className={styles.text}>
-                    {data.body}
+                    {data.content}
                 </p>
             </div>
         </div>
