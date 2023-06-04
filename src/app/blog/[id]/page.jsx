@@ -2,7 +2,18 @@ import React from 'react'
 import styles from './post.module.css'
 import Image from 'next/image'
 
-const Post = () => {
+async function getData(id) {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts/' + id);
+
+    if (!res.ok) {
+        throw new Error('Failed to fetch data');
+    }
+
+    return res.json();
+}
+
+const Post = async ({ params }) => {
+    const data = await getData(params.id)
     return (
         <div className={styles.container}>
             <div className={styles.top}>
@@ -33,7 +44,7 @@ const Post = () => {
             </div>
             <div className={styles.content}>
                 <p className={styles.text}>
-                    {data.content}
+                    {data.body}
                 </p>
             </div>
         </div>
