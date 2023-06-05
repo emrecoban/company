@@ -21,7 +21,7 @@ const Register = () => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(name, email, password)
+                body: JSON.stringify({ name, email, password })
             })
             res.status === 201 && router.push("/dashboard/login?success=Account has been created")
         } catch (error) {
