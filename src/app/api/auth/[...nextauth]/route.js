@@ -16,7 +16,7 @@ const handler = NextAuth({
             async authorize(credentials) {
                 await connect()
                 try {
-                    const user = User.findOne({
+                    const user = await User.findOne({
                         email: credentials.email
                     })
                     if (user) {
@@ -35,6 +35,9 @@ const handler = NextAuth({
             }
         }),
     ],
+    pages: {
+        error: "/dashboard/login"
+    }
 })
 
 export { handler as GET, handler as POST }

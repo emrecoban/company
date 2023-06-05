@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import styles from './login.module.css'
 import Link from 'next/link';
+import { signIn } from 'next-auth/react';
 
 const Login = () => {
     const [error, setError] = useState("");
@@ -12,6 +13,8 @@ const Login = () => {
         e.preventDefault();
         const email = e.target[0].value;
         const password = e.target[1].value;
+
+        signIn("credentials", { email, password })
     }
     return (
         <div className={styles.container}>
