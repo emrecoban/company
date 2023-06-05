@@ -4,6 +4,10 @@ This project is an **open-source** MIT-licensed full-stack [Next.js](https://git
 
 Try it: [company.emre.run](https://company.emre.run)
 
+## Why I built
+
+I'll explain soon! Stay tuned!
+
 ## Features
 
 Coming soon!
