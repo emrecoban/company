@@ -50,12 +50,14 @@ Coming soon!
   npm install
 ```
 
-4. Don't forget to configure `.env` file. Get your [Twitter API Token](https://developer.twitter.com/en/portal/dashboard) and [Create Redis database](https://console.upstash.com/):
+4. Don't forget to configure `.env` file:
 
 ```bash
-BEARER_TOKEN="{YOUR API TOKEN}"
-UPSTASH_REDIS_REST_URL="{YOUR URL}"
-UPSTASH_REDIS_REST_TOKEN="{YOUR API TOKEN}"
+MONGO="{YOUR MONGO URL}"
+GITHUB_ID="{YOUR GITHUB ID}"
+GITHUB_SECRET="{YOUR GITHUB SECRET}"
+NEXTAUTH_SECRET="{YOUR SECRET}"
+NEXTAUTH_URL="{YOUR URL}"
 ```
 
 5. Start the development server:
