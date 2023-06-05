@@ -3,9 +3,12 @@
 import React, { useState } from 'react'
 import styles from './login.module.css'
 import Link from 'next/link';
-import { signIn } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 const Login = () => {
+    const session = useSession()
+    const router = useRouter()
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
 
@@ -16,6 +19,15 @@ const Login = () => {
 
         signIn("credentials", { email, password })
     }
+
+    if (session.status === "loading") {
+        return <p>Loading...</p>
+    }
+
+    if (session.status === "authenticated") {
+        router?.push("/dashboard")
+    }
+
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>{success ? success : "Welcome Back"}</h1>
