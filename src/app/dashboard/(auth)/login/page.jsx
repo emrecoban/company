@@ -1,23 +1,29 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './login.module.css'
 import Link from 'next/link';
 import { signIn, useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 const Login = () => {
     const session = useSession()
     const router = useRouter()
+    const params = useSearchParams();
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
+
+    useEffect(() => {
+        setError(params.get("error"));
+        setSuccess(params.get("success"));
+    }, [params]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const email = e.target[0].value;
         const password = e.target[1].value;
 
-        signIn("credentials", { email, password })
+        signIn("credentials", { email, password, callbackUrl: "/dashboard" })
     }
 
     if (session.status === "loading") {
