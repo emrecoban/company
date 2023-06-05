@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 async function getData() {
-    const res = await fetch('/api/posts', { cache: "no-store" });
+    const res = await fetch(`${process.env.NEXTAUTH_URL}api/posts`, { cache: "no-store" });
 
     if (!res.ok) {
         throw new Error('Failed to fetch data');
