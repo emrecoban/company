@@ -1,34 +1,92 @@
-**I'm working on it! - by emre.**
+# Company
 
-## Getting Started
+This project is an **open-source** MIT-licensed full-stack [Next.js](https://github.com/vercel/next.js) application that uses MongoDB and Next-Auth.
 
-First, run the development server:
+Try it: [company.emre.run](https://company.emre.run)
+
+## Features
+
+Coming soon!
+
+## Screenshots
+
+![ss1](/github_assets/ss1.png)
+![ss2-dark](/github_assets/ss2.png)
+![ss3](/github_assets/ss3.png)
+![ss4](/github_assets/ss4.png)
+
+## Directory Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Coming soon!
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Built with
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- JavaScript
+- Tailwind CSS (Actually not)
+- React
+- Next.js
+- Mongoose (MongoDB)
+- Next-auth
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone the repository to your local machine:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  git clone https://github.com/emrecoban/company.git
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  cd company
+```
 
-## Deploy on Vercel
+3. Install the dependencies using `npm`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  npm install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Don't forget to configure `.env` file. Get your [Twitter API Token](https://developer.twitter.com/en/portal/dashboard) and [Create Redis database](https://console.upstash.com/):
+
+```bash
+BEARER_TOKEN="{YOUR API TOKEN}"
+UPSTASH_REDIS_REST_URL="{YOUR URL}"
+UPSTASH_REDIS_REST_TOKEN="{YOUR API TOKEN}"
+```
+
+5. Start the development server:
+
+```bash
+  npm run dev
+```
+
+6. Open your web browser and go to [http://localhost:3000](http://localhost:3000) to view the application.
+
+That's it! You should now have the project running locally on your machine. If you encounter any issues, be sure to check the project's documentation and issue tracker on GitHub.
+
+## Contributing
+
+Bug reports, feature requests, and pull requests are welcome. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+
+## Support
+
+- Sponsor to me on GitHub.
+- Give a star to this repo.
+- Follow me on Twitter [@emreshepherd](https://twitter.com/emreshepherd), or GitHub [@emrecoban](https://github.com/emrecoban).
+- Buy me a coffee, or book: https://www.buymeacoffee.com/emrecoban
+
+## References
+
+Coming soon!
+
+## Changelog
+
+- **[v1.0](https://github.com/emrecoban/company/releases/tag/v1.0):** The first version was born!
+
+## License
+
+This project is available as open source under the terms of the [MIT License](https://github.com/emrecoban/company/blob/main/LICENSE).
