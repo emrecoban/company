@@ -6,11 +6,12 @@ Try it: [company.emre.run](https://company.emre.run)
 
 ## Why I built
 
-I'll explain soon! Stay tuned!
+I developed this project by following [LamaDev](https://github.com/safak)'s video to learn the Next.js with MongoDB and NextAuth.js approach. Therefore, <ins>the UI design is not my own, and it's not significant</ins>. The purpose of this project is to fetch data from a local file, retrieve data from a remote database, perform user operations with third-party applications and email, and implement SEO optimizations.
 
 ## Features
 
-Coming soon!
+- User Authentication: Users can register, and login with their email, or GitHub account.
+- Post article: Users can post, and delete articles.
 
 ## Screenshots
 
