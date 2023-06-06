@@ -22,8 +22,38 @@ Coming soon!
 ## Directory Structure
 
 ```bash
-Coming soon!
+├── public
+└── src
+    ├── app
+    │   ├── about
+    │   ├── api
+    │   │   ├── auth
+    │   │   │   ├── [...nextauth]
+    │   │   │   └── register
+    │   │   └── posts
+    │   │       └── [id]
+    │   ├── blog
+    │   │   └── [id]
+    │   ├── contact
+    │   ├── dashboard
+    │   │   └── (auth)
+    │   │       ├── login
+    │   │       └── register
+    │   ├── portfolio
+    │   │   └── [category]
+    │   └── visual
+    ├── components
+    │   ├── AuthProvider
+    │   ├── button
+    │   ├── DarkModeToggle
+    │   ├── footer
+    │   └── navbar
+    ├── context
+    ├── models
+    └── utils
 ```
+
+![visualizer](/github_assets/visualizer.png)
 
 ## Built with
 
