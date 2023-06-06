@@ -32,7 +32,8 @@ Coming soon!
 - React
 - Next.js
 - Mongoose (MongoDB)
-- Next-auth
+- NextAuth.js
+- SWR
 
 ## Installation
 
@@ -54,7 +55,7 @@ Coming soon!
   npm install
 ```
 
-4. Don't forget to configure `.env` file:
+4. Don't forget to configure `.env` file. Get your [GitHub API Token](https://github.com/settings/developers) and [Create Mongo database](https://cloud.mongodb.com/):
 
 ```bash
 MONGO="{YOUR MONGO URL}"
@@ -87,7 +88,10 @@ Bug reports, feature requests, and pull requests are welcome. This project is in
 
 ## References
 
-Coming soon!
+- [Next.js Full Tutorial for Beginners](https://www.youtube.com/watch?v=VE8BkImUciY)
+- [mongoose Getting Started](https://mongoosejs.com/docs/index.html)
+- [SWR Getting Started](https://swr.vercel.app/docs/getting-started)
+- [Auth.js Getting Started](https://authjs.dev/getting-started/introduction)
 
 ## Changelog
 
